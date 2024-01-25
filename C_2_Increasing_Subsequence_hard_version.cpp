@@ -1,0 +1,39 @@
+// Given an array of numbers,
+// program to arrange the numbers
+// to form the largest number
+#include <algorithm>
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+int myCompare(string X, string Y)
+{
+	string XY = X.append(Y);
+
+	string YX = Y.append(X);
+
+	if(XY > YX) return 0;
+    return 1;
+}
+void printLargest(vector<string> arr)
+{
+	sort(arr.begin(), arr.end(), myCompare);
+	for (int i = 0; i < arr.size(); i++)
+		cout << arr[i] <<" ";
+}
+
+// Driver code
+int main()
+{
+	vector<string> arr;
+
+	// output should be 6054854654
+	arr.push_back("54");
+	arr.push_back("546");
+	arr.push_back("548");
+	arr.push_back("60");
+	printLargest(arr);
+
+	return 0;
+}

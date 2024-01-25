@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define pb push_back
+#define fi first
+#define se second
+#define INF 2e18
+#define all(x) (x).begin(), (x).end()
+typedef vector<ll> v64;
+typedef vector<int> v32;
+#define do_fast_dhiraj() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
+#define forl(i,e) for(ll i = 0; i < e; i++)
+#define forfl(i,s,e) for(ll i = s; i < e; i++)
+#define rforl(i,s) for(ll i = s; i >= 0; i--)
+#define rforfl(i,s,e) for(ll i = s; i >= e; i--)
+void dhiraj();
+ll binaryExpoRRec(ll a, ll b) {
+    if (b == 0) return 1 * 1ll;
+    ll res = binaryExpoRRec(a, b / 2);
+    if (b & 1) {
+        return a * res * res;
+    } return res * res;
+}
+int main()
+{
+    do_fast_dhiraj(); int t = 1;
+    cin >> t;
+    while (t--) {dhiraj(); cout << "\n"; } return 0;
+}
+void dhiraj()
+{
+    
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>code</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>
