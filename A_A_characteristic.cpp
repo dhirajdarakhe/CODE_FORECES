@@ -82,7 +82,7 @@ ll dtod(int x, int y, int colu) { return (x * colu) + y; }
 void solution()
 {
     // ll mn = 2e18;
-    // ll mx = -1*2e18;
+    ll mx = -1*2e18;
     ll a = 0, b = 0, m = 0, n = 0, k = 0, ans = 0;
     cin >> a >> k;
     v64 v(a);
